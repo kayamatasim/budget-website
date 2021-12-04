@@ -13,4 +13,4 @@ button.addEventListener('click',()=>{
 
   totalcost.innerText=total;
 })
-
+ 
