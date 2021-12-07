@@ -12,11 +12,37 @@
 </head>
 
 <body>
+    <div class="modal fade" tabindex="-1" role="dialog" id="buddy" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">what is your budget</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               close
+              </button>
+            </div>
+            <div class="modal-body">
+              <input type="number" class="bud form-control">
+              <button class="btn set btn-warning m-2" type="button" data-dismiss="modal">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
     <nav class="navbar navbar-light bg-light justify-content-between fixed">
         <a class="navbar-brand">sheikhstore</a> 
         <form class="form-inline">
-            <h4 class="result mr-3 text-info"></h4>
-            <button class="btn btn-outline-success my-2 my-sm-0 cart" data-toggle="collapse" href="#bag" type="button">calculate</button>
+             <!-- adding modal over here -->
+
+             <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#buddy">
+    set your budget here
+  </button>
+    <a class="btn btn-outline-success mx-3 my-2 my-sm-0 cart" data-toggle="collapse" href="#bag" type="button">calculate</a>
         </form>
     </nav>
     <div class="dummy"></div>
