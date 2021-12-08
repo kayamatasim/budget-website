@@ -1,23 +1,32 @@
 .jumbotron{
   background:url('https://source.unsplash.com/800x400/?shopping');
   background-size:cover;
-  overflow:scroll;
   height: 400px;
     
  
 }
+.jumbotron{
+  
+  box-shadow: 0px 0px 10px black !important;
+}
 
 .img-fluid{
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-20%);
   z-index:1;
 }
 .imgbox{
-  height:200px;
+  height:400px;
   overflow: hidden;
+  z-index: 0;
 }
-
+.card{
+  height:400px;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 0px 0px 10px purple;
+}
  
 .card-body{
   margin-top: 0px;
@@ -35,3 +44,33 @@
 .dummy{
   height:4rem;
 }
+.dummy2{
+  height:5rem;
+}
+
+.bag{
+  position: fixed;
+  text-align: center;
+  color: blue !important;
+  background-color: rgba(255, 255, 255, 0.439);
+  z-index: 10;
+  
+
+}
+.sec{
+  z-index: 5;
+}
+img{
+  z-index: 1;
+}
+.cart{
+  background-color: chartreuse !important;
+}
+
+.up{
+  background-color: lawngreen !important;
+}
+.down{
+  background-color: rgb(255, 33, 33) !important;
+}
+

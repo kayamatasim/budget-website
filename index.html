@@ -5,143 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sheikhstore</title>
+    <link rel = "icon" href = 
+    "icon.jpg";
+            type = "image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="modal fade" tabindex="-1" role="dialog" id="buddy" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" tabindex="-1" role="dialog" id="buddy" 
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">what is your budget</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               close
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">what is your budget</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        close
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" class="bud form-control">
+                    <button class="btn set btn-warning m-2" type="button" data-dismiss="modal">submit</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <input type="number" class="bud form-control">
-              <button class="btn set btn-warning m-2" type="button" data-dismiss="modal">submit</button>
-            </div>
-          </div>
         </div>
-      </div>
-    
+    </div>
+
 
 
 
 
     <nav class="navbar navbar-light bg-light justify-content-between fixed">
-        <a class="navbar-brand">sheikhstore</a> 
+        <a class="navbar-brand">sheikhstore</a>
         <form class="form-inline">
-             <!-- adding modal over here -->
+            <!-- adding modal over here -->
 
-             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#buddy">
-    set your budget here
-  </button>
-    <a class="btn btn-outline-success mx-3 my-2 my-sm-0 cart" data-toggle="collapse" href="#bag" type="button">calculate</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#buddy">
+                set your budget here
+            </button>
+            <a class="btn btn-outline-success mx-3 my-2 my-sm-0 cart" type="button">calculate</a>
         </form>
     </nav>
     <div class="dummy"></div>
-    <div class="collapse" id="bag">
+    
         <div class="row">
-            <div class="col result">
-
+            <div class="col result d-flex justify-content-center bag">
+                <h1 class="display-4">we respect your every penny set your budget and then start shoping, happy shoping to you!</h1>
             </div>
         </div>
 
-    </div>
+
+
+    <div class="dummy2"></div>
     <div class="jumbotron">
 
     </div>
     <div class="container-fluid">
-        <div class="row my-3">
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="imgbox">
-                        <img src="https://images.unsplash.com/photo-1558467516-f427f3ea3c33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="" class="card-img-top img-fluid">
+        <div class="row sec">
 
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title my-0">suger</h4>
-                        <h6>price: 40rs/kg</h6>
-                    </div>
-                    <input type="button" class="btn btn-sm btn-danger m-1 mx-2 down" value="-">
-                    <input type="button" class="num btn mx-2" value="0" min="0" price="40">
-                    <input type="button" placeholder="button" value="+" class="btn btn-sm btn-success m-1 mx-2 up">
-                </div>
-            </div>
-
-
-
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="imgbox">
-                        <img src="https://images.unsplash.com/photo-1594813592981-5f97b07dd392?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=397&q=80" alt="" class="card-img-top img-fluid">
-                         </div>
-                    <div class="card-body">
-                        <h4 class="card-title my-0">rice</h4>
-
-                        <h6>price: 60rs/kg</h6>
-                    </div>
-                    <input type="button" class="btn btn-sm btn-danger down m-1 mx-2" value="-">
-                    <input type="button" class="num btn mx-2" value="0" min="0" price="60">
-                    <input type="button" placeholder="button" value="+" class="btn btn-sm btn-success m-1 mx-2 up">
-
-                </div>
-            </div>
-
-
-
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="imgbox">
-                        <img src="https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top img-fluid">
- 
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title my-0">flour</h4>
-                        <h6>price: 20/kg</h6>
-                    </div>
-                    <input type="button" class="btn btn-danger btn-sm m-1 mx-2 down" value="-">
-                    <input type="button" class="num form btn mx-2" value="0" min="0" price="20">
-                    <input type="button" placeholder="button" value="+" class="btn btn-sm btn-success m-1 mx-2 up">
-                </div>
-            </div>
-
-
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="imgbox">   
-                             <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1436&q=80" alt="" class="card-img-top img-fluid">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title my-0">cooking oil</h4>
-
-                        <h6>price: 150rs/kg</h6>
-                    </div>
-                    <input type="button" class="btn btn-danger btn-sm m-1 mx-2 down" value="-">
-                    <input type="button" class="num form btn mx-2" value="0" min="0" price="150">
-                    <input type="button" placeholder="button" value="+" class="btn btn-sm btn-success m-1 mx-2 up">
-                </div>
-            </div>
         </div>
     </div>
+   
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
-crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
- integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
- crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(()=>{
+        $('#buddy').modal('show')
+      })
+    
+        </script>
 </body>
 
 </html>
-
-
